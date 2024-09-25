@@ -1,0 +1,16 @@
+{
+  "name": "gestion-proyectos",
+  "version": "1.0.0",
+  "description": "Software para gestionar proyectos",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Melissa Galvis Montes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.2"
+  }
+}

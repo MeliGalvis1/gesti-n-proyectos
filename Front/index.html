@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestion de proyectos</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+
+    </head>
+<body style="background-color: rgb(228, 233, 233);">
+    <div>
+        <h1 class="h1" style="text-align: center;">Gestion de proyectos</h1>
+
+        <div class="row" style="margin: 2%;text-align: center;">
+            <div class="col-md-4">
+                <h3 class="h3">Nuevo proyecto</h3>
+                <div class="form-group" style="text-align: left;">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control " id="nombreP">
+                    <br>
+                    <label for="">descripcion</label>
+                    <input type="text" class="form-control" id="descripcionP">
+                    <br>
+                    <label for="">Fecha de inicio</label>
+                    <input type="date" class="form-control" id="fechaIP">
+                    <br>
+                    <label for="">Fecha final</label>
+                    <input type="date" class="form-control" id="fechaFP">
+                    <br>
+                    <input class="btn btn-primary proyecto" type="submit">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3 class="h3">Nuevo miembro</h3>
+                <div class="form-group" style="text-align: left;">
+                    <label for="">nombre</label>
+                    <input type="text" class="form-control " id="nombrePm">
+                    <br>
+                    <label for="">apellido</label>
+                    <input type="text" class="form-control" id="descripcionPm">
+                    <br>
+                    <label for="">correo</label>
+                    <input type="email" class="form-control" id="emailm">
+                    <br>
+                    <label for="">ID del proyecto</label>
+                    <input type="text" class="form-control" id="idpm">
+                    <br>
+                    <input class="btn btn-primary miembro" type="submit">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3 class="h3">Nueva tarea</h3>
+                <div class="form-group" style="text-align: left;">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control " id="nombreT">
+                    <br>
+                    <label for="">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcionT">
+                    <br>
+                    <label for="">Fecha de Inicio</label>
+                    <input type="date" class="form-control" id="fechaIT">
+                    <br>
+                    <label for="">fecha Final</label>
+                    <input type="date" class="form-control" id="fechaFT">
+                    <br>
+                    <label for="">ID del Proyecto</label>
+                    <input type="text" class="form-control" id="idpT">
+                    <br>
+                    <input class="btn btn-primary tarea" type="submit">
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center; margin: 5%;">
+            <div class="col-md-11">
+                <h3 class="h3">Proyectos</h3>
+                <table id="proyectos" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Fecha de inicio</th>
+                            <th>Fecha final</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyP">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-11">
+                <h3 class="h3">Miembros</h3>
+                <table id="miembros" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Correo</th>
+                            <th>Id proyecto</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyM">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-11">
+                <h3 class="h3">Tareas</h3>
+                <table id="tareas" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Fecha de Inicio</th>
+                            <th>Fecha Final</th>
+                            <th>ID del Proyecto</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyT">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
