@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "66f0a0e36c8ff355d88213c1"
+  },
+  "nombre": "Pedro",
+  "apellido": "Ramirez",
+  "correo": "pramirez@gmail.com",
+  "proyecto": {
+    "$oid": "66f0a0996c8ff355d88213bf"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f0a10b6c8ff355d88213c3"
+  },
+  "nombre": "Julian",
+  "apellido": "Garzon",
+  "correo": "jgarzon@gmail.com",
+  "proyecto": {
+    "$oid": "66f0a0996c8ff355d88213bf"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f0bd985254f11748fe657c"
+  },
+  "nombre": "Marcela",
+  "apellido": "Riasco",
+  "correo": "marcelariasco324@gmail.com",
+  "proyecto": {
+    "$oid": "66f0a0996c8ff355d88213bf"
+  },
+  "__v": 0
+}]
